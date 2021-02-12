@@ -24,6 +24,19 @@ table {
 table, th, td {
     align-content: center;
     background-color: blueviolet;
-    border: 2px dotted crimson;;
+    border: 2px dotted crimson;
+
+}
+
+th {
+    border: 5px solid coral;
+
+}
+
+td {
+    border-bottom-color: crimson;
+    border: 4px solid;
+    border-color: darkred;
+    padding: 10px;
 
 }
