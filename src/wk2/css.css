@@ -1,0 +1,29 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+
+}
+
+table {
+    font-family: Papyrus;
+
+}
+
+table, th, td {
+    align-content: center;
+    background-color: blueviolet;
+    border: 2px dotted crimson;;
+
+}
