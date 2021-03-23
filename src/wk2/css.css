@@ -1,7 +1,4 @@
-/*,    en list-style-image. Ook gebruik je tag-,
-.class en geneste selectoren.
-(Kies je eigen inhoud en vormgeving, maar gebruik dezelfde CSS features)
-*/
+
 body {
     background-image: url("imageweek2/lolbackground.jpg");
     background-color: #cccccc;
@@ -30,7 +27,7 @@ h1 {
     color: red;
     min-width: 50px;
     padding: 30px;
-    padding-left: 50px;
+
 }
 
 h3, h4 {
@@ -38,7 +35,7 @@ h3, h4 {
     font-family: "Comic Sans MS";
     font-size: x-large;
     padding: 30px;
-    padding-left: 50px;
+
 
 }
 
@@ -46,6 +43,7 @@ table {
     font-family: Papyrus;
     background-color: aqua;
     border: 2px lightblue;
+    min-width: 50px;
 
 }
 
@@ -58,14 +56,36 @@ table, th, td {
 
 th {
     border: 5px solid coral;
+    min-width: 50px;
 
 }
 
 td {
     font-family: "Comic Sans MS";
-    border-bottom-color: crimson;
     border: 4px solid;
-    border-color: darkred;
     padding: 10px;
+    min-width: 50px;
 
+}
+
+
+li {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    position: relative;
+    padding-left: 20px;
+}
+li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url('imageweek2/chibhiseraphine.jpg');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
