@@ -58,16 +58,16 @@ function resetCounter() {
         document.getElementById("resetCounterButton").disabled = true;
 
 
-
     } else {
         return
     }
     document.getElementById("demo").innerHTML = txt;
 }
 
-function enableResteButton(){
+function enableResteButton() {
     if (localStorage.clickcount || localStorage.clickcounttvs > 0) {
         document.getElementById("resetCounterButton").disabled = false;
+
 
     }
 
