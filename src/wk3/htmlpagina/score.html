@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <title>Score points</title>
     <link href="../css.css" rel="stylesheet">
+    <script type="text/javascript" src="jsswk3.js"></script>
 </head>
 <body>
-<div> <h1>Scoreboard </h1></div>
+<div>
+    <div>
+
+        <h1>Scoreboard </h1>
+    </div>
 
 
-<div><a href="team.html"> Klik hier om naar de teampagina te gaan</a>
-    <br>
-    <a href="matches.html"> Klik hier om naar onze aankomende wedstrijden te gaan</a> <br>
-    <a href="week3.html"> Klik hier om terug te gaan naar de homepage</a> <br></div>
+    <div>
+        <div>
+            <p>
+                <button onclick="clickCounter()" type="button" class="element"><img src="../afbeeldingen/porro2.png"
+                                                                                    width="100" height="100"><b> Klik
+                    voor
+                    een win TVS </b></button>
+            </p>
+            <div class="big">Punt voor ons:</div>
+            <div class="result" id="result">
+                0
+            </div>
 
+        </div>
+
+        <div>
+            <p>
+                <button onclick="clickCounter2()" type="button" class="element"><img src="../afbeeldingen/angry.jpg"
+                                                                                     width="100" height="100"><b> Klik
+                    voor
+                    een win enemy </b></button>
+            </p>
+            <div class="big">Punt voor tegenstander:</div>
+            <div class="result" id="result2">
+               0
+            </div>
+        </div>
+        <div>
+            <button  onclick="resetCounter()">Reset Counter</button>
+
+            <p id="demo"></p></div>
+
+    </div>
+
+    <div class="item"><a href="team.html"> Klik hier om naar de teampagina te gaan</a>
+        <br>
+        <a href="matches.html"> Klik hier om naar onze aankomende wedstrijden te gaan</a> <br>
+        <a href="week3.html"> Klik hier om terug te gaan naar de homepage</a> <br></div>
+</div>
 </body>
 </html>

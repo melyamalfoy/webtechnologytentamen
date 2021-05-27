@@ -35,14 +35,14 @@ body {
 div {
     background-color: pink;
     color: deeppink;
-    width: 500px;
+    width: 1000px;
     margin: auto;
-    padding: 30px;
+
+
     text-align: center;
 
 
 }
-
 
 
 .center {
@@ -80,9 +80,7 @@ table {
 }
 
 
-
-
-table, th, td{
+table, th, td {
 
     align-content: center;
     background-color: palevioletred;
@@ -105,7 +103,6 @@ td {
     text-align: left;
 
 }
-
 
 
 td:hover {
@@ -136,15 +133,19 @@ li:before {
 }
 
 a:link {
-    color: deeppink;}
+    color: deeppink;
+}
 
-a:visited{
+a:visited {
     color: deeppink;
     text-transform: capitalize;
 }
 
-.selectedRow{
-font-size:50px; font-style: italic; color:deeppink;")
+.selectedRow {
+    font-size: 50px;
+    font-style: italic;
+    color: deeppink;
+")
 }
 
 /* Style the buttons */
@@ -160,4 +161,55 @@ font-size:50px; font-style: italic; color:deeppink;")
 .active, .btn:hover {
     background-color: #666;
     color: white;
+}
+
+.big {
+
+    background: #f1f1f1;
+    font-size: 30px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 30%;
+
+}
+
+.result {
+
+    background-color: palevioletred;
+    border: 2px dotted beige;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    width: 30%;
+
+
+}
+
+
+
+.item {
+    background: hotpink;
+    color: black;
+    font-size: 50px;
+
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px;
+    grid-column-gap: 5px;
+}
+
+.item {
+    background: #ce8888;
+
+
 }
