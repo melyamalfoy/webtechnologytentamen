@@ -1,0 +1,163 @@
+
+body {
+    background-image: url("afbeeldingen/sonawappaper.jpg");
+    background-color: #cccccc;
+
+}
+
+
+#hiddenInfo {
+
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+}
+
+#porrobackground {
+    background-image: url("afbeeldingen/porro.png");
+    background-position: center;
+    padding: 100px;
+
+
+}
+
+#nextmatch {
+    padding-right: 70px;
+    padding-left: 40px;
+}
+
+#homepage {
+    text-align: center;
+}
+
+div {
+    background-color: pink;
+    color: deeppink;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+
+
+}
+
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: deeppink;
+    min-width: 50px;
+    padding: 30px;
+
+}
+
+h3, h4 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+    color: deeppink;
+    padding: 30px;
+
+
+}
+
+table {
+    margin: auto;
+    font-family: Papyrus;
+    background-color: pink;
+    border: 2px ghostwhite;
+    min-width: 50px;
+
+
+}
+
+
+
+
+table, th, td{
+
+    align-content: center;
+    background-color: palevioletred;
+    border: 2px dotted beige;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+th {
+    border: 5px solid hotpink;
+    min-width: 50px;
+
+}
+
+td {
+    font-family: "Comic Sans MS";
+    border: 10px solid pink;
+    min-width: 50px;
+    text-align: left;
+
+}
+
+
+
+td:hover {
+    background-color: hotpink;
+    color: pink;
+    border: lightpink;
+}
+
+
+li {
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+
+    background-size: cover;
+    background-image: url('afbeeldingen/chibhiseraphine.jpg');
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a:link {
+    color: deeppink;}
+
+a:visited{
+    color: deeppink;
+    text-transform: capitalize;
+}
+
+.selectedRow{
+font-size:50px; font-style: italic; color:deeppink;")
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}
