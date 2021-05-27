@@ -23,6 +23,7 @@ function clickCounter() {
     if (typeof (Storage) !== "undefined") {
         if (localStorage.clickcounttvs) {
             localStorage.clickcounttvs = Number(localStorage.clickcounttvs) + 1;
+            enableResteButton()
         } else {
             localStorage.clickcounttvs = 0;
         }
@@ -36,6 +37,7 @@ function clickCounter2() {
     if (typeof (Storage) !== "undefined") {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            enableResteButton()
 
         } else {
             localStorage.clickcount = 0;
@@ -53,6 +55,8 @@ function resetCounter() {
         localStorage.clear()
         clickCounter2()
         clickCounter()
+        document.getElementById("resetCounterButton").disabled = true;
+
 
 
     } else {
@@ -61,3 +65,11 @@ function resetCounter() {
     document.getElementById("demo").innerHTML = txt;
 }
 
+function enableResteButton(){
+    if (localStorage.clickcount || localStorage.clickcounttvs > 0) {
+        document.getElementById("resetCounterButton").disabled = false;
+
+    }
+
+
+}
