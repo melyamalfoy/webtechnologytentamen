@@ -1,0 +1,217 @@
+
+body {
+    background-image: url("media/sonawappaper.jpg");
+    background-color: #cccccc;
+
+}
+
+
+#hiddenInfo {
+
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+}
+
+#porrobackground {
+    background-image: url("media/porro.png");
+    background-position: center;
+    padding: 100px;
+
+
+}
+
+#nextmatch {
+    padding-right: 70px;
+    padding-left: 40px;
+}
+
+#homepage {
+    text-align: center;
+    padding: 200px;
+}
+
+.maindiv {
+    background-color: pink;
+    color: deeppink;
+    width: 1000px;
+    margin: auto;
+    padding: 200px;
+
+}
+div {
+    background-color: pink;
+    color: deeppink;
+    width: 1000px;
+    margin: auto;
+
+
+
+    text-align: center;
+
+
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: deeppink;
+    min-width: 50px;
+    padding: 30px;
+
+}
+
+h3, h4 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+    color: deeppink;
+    padding: 30px;
+
+
+}
+
+
+
+
+table, th, td {
+    margin: auto;
+    align-content: center;
+    background-color: palevioletred;
+    border: 2px dotted beige;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+th {
+    border: 5px solid hotpink;
+    min-width: 50px;
+
+}
+
+td {
+    font-family: "Comic Sans MS";
+    border: 10px solid pink;
+    min-width: 50px;
+    text-align: left;
+
+}
+
+
+td:hover {
+    background-color: hotpink;
+    color: pink;
+    border: lightpink;
+}
+
+
+li {
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+
+    background-size: cover;
+    background-image: url('media/chibhiseraphine.jpg');
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: deeppink;
+    text-transform: capitalize;
+}
+
+.selectedRow {
+    font-size: 50px;
+    font-style: italic;
+    color: deeppink;
+")
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.big {
+
+    background: #f1f1f1;
+    font-size: 30px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 30%;
+
+}
+
+.result {
+
+    background-color: palevioletred;
+    border: 2px dotted beige;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    width: 30%;
+
+
+}
+
+
+
+.item {
+    background: hotpink;
+    color: black;
+    font-size: 50px;
+
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px;
+    grid-column-gap: 5px;
+}
+
+.item {
+    background: #ce8888;
+
+
+}
