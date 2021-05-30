@@ -14,39 +14,44 @@
 <h2>Bekijk hier de instructie video's  voor de verschillende lanes en hero's</h2>
 
     <img src="../media/kaart.jpeg" width="600" height="600" >
-    <form><br>
+    <form oninput="play(sel.value, ctrls.checked)"><br>
 
 
             <select class="select" id="hero" onchange="filterRole();">
-                <option value="1">Selecteer een lane</option>
-                <option value="3">Top</option>
-                <option value="4">Mid</option>
-                <option value="5">ADC</option>
-                <option value="6">Support</option>
-                <option value="7">Jungle</option>
+                <option>Selecteer een lane</option>
+                <option value="">Top</option>
+                <option value="">Mid</option>
+                <option value="">ADC</option>
+                <option value="">Support</option>
+                <option value="">Jungle</option>
 
 
             </select>
 
-            <select class="select" id="role" disabled>
+            <select  name="sel" class="select" id="role" disabled>
                 <option data-hero="Top" value="2">Selecteer eerst een lane</option>
-                <option data-hero="Top" value="3">Kayle</option>
-                <option data-hero="Top" value="4">Nasus</option>
-                <option data-hero="Mid" value="5">Annie</option>
-                <option data-hero="Mid" value="6">Katarina</option>
-                <option data-hero="ADC" value="7">Draven</option>
-                <option data-hero="ADC" value="8">Tristana</option>
-                <option data-hero="Support" value="9">Soraka</option>
-                <option data-hero="Support" value="10">Seraphine</option>
-                <option data-hero="Jungle" value="11">Shaco</option>
-                <option data-hero="Jungle" value="12">Nocturne</option>
+                <option data-hero="Top" value="https://www.youtube.com/embed/GV074SIfNhA">Kayle</option>
+                <option data-hero="Top" value="https://www.youtube.com/embed/U9JRHZcZXrI">Nasus</option>
+                <option data-hero="Mid" value="https://www.youtube.com/embed/XwWDdQisCnk">Annie</option>
+                <option data-hero="Mid" value="https://www.youtube.com/embed/H2naWb2Tuls">Katdrrina</option>
+                <option data-hero="ADC" value="https://www.youtube.com/embed/vx4s_Ttsvvo">Draven</option>
+                <option data-hero="ADC" value="https://www.youtube.com/embed/efB9ASc4nuI">Tristana</option>
+                <option data-hero="Support" value="https://www.youtube.com/embed/8HpXMiRFQeE">Soraka</option>
+                <option data-hero="Support" value="https://www.youtube.com/embed/hiNN2WKkR3Q">Seraphine</option>
+                <option data-hero="Jungle" value="https://www.youtube.com/embed/Q9m48jiVWL4">Shaco</option>
+                <option data-hero="Jungle" value="https://www.youtube.com/embed/owrwt97AH54">Nocturne</option>
 
 
             </select>
             <span id="option-container" style="visibility: hidden; position:absolute;"></span>
+        controls: <input type="checkbox" name="ctrls" checked/>
 
 
-</form></div>
+
+    </form>
+    <iframe id="player" width="640" height="500" allow="autoplay; fullscreen;" src="">
+    </iframe>
+</div>
 
 
 <div class="item"><a href="team.html"> Klik hier om naar de teampagina te gaan</a>

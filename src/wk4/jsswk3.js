@@ -89,7 +89,7 @@ function action() {
 
 
 function filterRole() {
-    var hero = $("#hero").find('option:selected').text(); // slaat hero op
+    var hero = $("#hero").find('option:selected').text(); // slat h
     $("#option-container").children().appendTo("#role"); // moves <option> contained in #option-container back to their <select>
     var toMove = $("#role").children("[data-hero!='" + hero + "']"); // selects role elements to move out
     toMove.appendTo("#option-container"); // moves role elements in #option-container
@@ -97,3 +97,10 @@ function filterRole() {
 };
 
 
+function play(s, c) {
+    let newSource = "";
+    if (s != "") {
+        newSource = s + "?autoplay=1&controls=" + (c ? 1 : 0);
+    }
+    document.getElementById("player").src = newSource;
+}
