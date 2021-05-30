@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css.css" rel="stylesheet">
+    <script type="text/javascript" src="../jsswk3.js"></script>
+    <title> Nieuwsbrief</title>
+</head>
+<body>
+
+
+<div class="maindiv">
+    <h1> Nieuwsbrief </h1>
+
+    <h2> Schrijf je in voor onze nieuwsbrief</h2>
+
+    <form action="javascript:action()"
+          onsubmit="return validateForm(this)"
+    >
+        <table>
+            <tr>
+                <td><label for="myName">Naam</label></td>
+                <td><input type="text" id="myName"
+                           required pattern="[A-Za-z]+"/></td>
+            </tr>
+            <tr>
+                <td><label for="emailadres">e-mailadres</label></td>
+                <td><input type="email" id="emailadres"
+                           required minlength="6"/></td>
+            </tr>
+            <tr>
+                <td><label for="nieuwsbrief">Nieuwsbrief</label></td>
+                <td><select id="nieuwsbrief">
+                    <option value="maand">Maandelijks</option>
+                    <option value="kwartaal">één keer per kwartaal</option>
+                    <option value="jaar">één keer per jaar </option>
+
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="voorwaarden">Ik accepteer de privacy voorwaarden voor de registratie van mijn naam en
+                    e-mailadres</label></td>
+                <td><input type="checkbox" id="voorwaarden"
+                           checked/></td>
+            </tr>
+            <tr>
+
+                <td>
+                    <button type="submit">Verzenden</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+
+<div class="item"><a href="team.html"> Klik hier om naar de teampagina te gaan</a>
+    <br>
+    <a href="matches.html"> Klik hier om naar onze aankomende wedstrijden te gaan</a> <br>
+    <a href="score.html"> Klik hier om naar onze scorepagina te gaan</a> <br>
+    <a href="indexweek5.html"> Klik hier om terug te gaan naar de homepage</a> <br>
+    <a href="nieuwsbriefpagina.html"> Klik hier om naar onze nieuwsbriefpagina te gaan</a> <br></div>
+
+</body>
+</html>
