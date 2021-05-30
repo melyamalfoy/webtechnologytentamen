@@ -74,9 +74,7 @@ function enableResteButton() {
 
 }
 
-function validateForm(form) {
-    let name = form.querySelector('#myName').value;
-    let voorwaarden = form.querySelector('#voorwaarden').value;
+function validateForm() {
     let approved = (document.querySelector('#voorwaarden:checked') !== null);
     if (!approved) {
         alert('Accepteer onze privacyvoorwaarden');
@@ -91,3 +89,25 @@ function action() {
 
 
 
+jQuery(function($) {
+    var locations = {
+        'Germany': ['Duesseldorf', 'Leinfelden-Echterdingen', 'Eschborn'],
+        'Spain': ['Barcelona'],
+        'Hungary': ['Pecs'],
+        'USA': ['Downers Grove'],
+        'Mexico': ['Puebla'],
+        'South Africa': ['Midrand'],
+        'China': ['Beijing'],
+        'Russia': ['St. Petersburg'],
+    }
+
+    var $locations = $('#location');
+    $('#country').change(function () {
+        var country = $(this).val(), lcns = locations[country] || [];
+
+        var html = $.map(lcns, function(lcn){
+            return '<option value="' + lcn + '">' + lcn + '</option>'
+        }).join('');
+        $locations.html(html)
+    });
+});
