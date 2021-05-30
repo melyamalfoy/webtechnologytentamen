@@ -88,26 +88,12 @@ function action() {
 }
 
 
+function filterRole() {
+    var hero = $("#hero").find('option:selected').text(); // slaat hero op
+    $("#option-container").children().appendTo("#role"); // moves <option> contained in #option-container back to their <select>
+    var toMove = $("#role").children("[data-hero!='" + hero + "']"); // selects role elements to move out
+    toMove.appendTo("#option-container"); // moves role elements in #option-container
+    $("#role").removeAttr("disabled"); // enables select
+};
 
-jQuery(function($) {
-    var locations = {
-        'Germany': ['Duesseldorf', 'Leinfelden-Echterdingen', 'Eschborn'],
-        'Spain': ['Barcelona'],
-        'Hungary': ['Pecs'],
-        'USA': ['Downers Grove'],
-        'Mexico': ['Puebla'],
-        'South Africa': ['Midrand'],
-        'China': ['Beijing'],
-        'Russia': ['St. Petersburg'],
-    }
 
-    var $locations = $('#location');
-    $('#country').change(function () {
-        var country = $(this).val(), lcns = locations[country] || [];
-
-        var html = $.map(lcns, function(lcn){
-            return '<option value="' + lcn + '">' + lcn + '</option>'
-        }).join('');
-        $locations.html(html)
-    });
-});
