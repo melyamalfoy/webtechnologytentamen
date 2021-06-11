@@ -104,3 +104,21 @@ function play(s, c) {
     }
     document.getElementById("player").src = newSource;
 }
+
+class Thema {                                                 //cursus thema
+    constructor(titel, datumToevoeging, instructies) {
+        this.titel = titel;
+        this.datumToevoeging = datumToevoeging;
+        this.instructies = instructies;
+    }
+
+}
+
+class Instructie {                                    //instrucitefilmpje
+    constructor(url, titel, duration) {
+        this.urlFilmpje = urlFilmpje;
+        this.titel = titel;
+        this.duur = duur;
+    }
+
+}
