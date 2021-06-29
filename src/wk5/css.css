@@ -41,12 +41,12 @@ body {
     padding: 200px;
 
 }
+
 div {
     background-color: pink;
     color: deeppink;
     width: 1000px;
     margin: auto;
-
 
 
     text-align: center;
@@ -78,8 +78,6 @@ h3, h4 {
 
 
 }
-
-
 
 
 table, th, td {
@@ -193,12 +191,10 @@ a:visited {
 }
 
 
-
 .item {
     background: hotpink;
     color: black;
     font-size: 50px;
-
 
 
 }
@@ -219,3 +215,4 @@ a:visited {
 option {
     margin: 0.5em;
 }
+
