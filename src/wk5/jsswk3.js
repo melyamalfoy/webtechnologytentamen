@@ -123,10 +123,11 @@ class Instructie {                                    //instrucitefilmpje
 
 }
 
-function myFunction(imgs) {
+function openThumbnail(imgs) {
     var expandImg = document.getElementById("expandedImg");
     var imgText = document.getElementById("imgtext");
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
 }
+

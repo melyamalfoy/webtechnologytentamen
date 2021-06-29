@@ -37,11 +37,12 @@ footer {
 
 }
 .content {
-    grid-area: content
+    grid-area: content;
+    object-fit: contain;
 }
 
 
-img {
+.tiny {
     max-width: 150px;
     max-height: 100%;
     object-fit: cover;
@@ -84,8 +85,9 @@ body {
 
 /* The expanding image container */
 .container {
-    position: relative;
+    position: inherit;
     display: none;
+
 }
 
 /* Expanding image text */
@@ -99,7 +101,6 @@ body {
 
 /* Closable button inside the expanded image */
 .closebtn {
-    position: absolute;
     top: 10px;
     right: 15px;
     color: white;
