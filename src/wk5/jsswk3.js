@@ -1,7 +1,7 @@
 function info() {
     let x = document.getElementById("hiddenInfo");
     if (x.style.display == "none") {
-        x.style.display = "block";
+        x.style.display = "black";
     } else {
         x.style.display = "none";
     }
@@ -125,9 +125,25 @@ class Instructie {                                    //instrucitefilmpje
 
 function openThumbnail(imgs) {
     var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
     expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
+
+    var x = expandImg;
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+
 }
 
+
+function closeImage() {
+    var x = document.getElementById("expandedImg");
+    if (x.style.display === "none") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+
+}
